@@ -1,0 +1,16 @@
+body {
+    background: #ceeff9;
+  }
+  .Camera {
+    width: 100%;
+    height: auto;
+  }
+  .Camera h1 {
+    color: #000000;
+    position: relative;
+    top: -20px;
+    text-align:center;
+  }
+  p {
+    color: #1F4E5F;
+  }

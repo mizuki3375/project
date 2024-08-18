@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+   <head>
+       <title>{{ title }} - FZ5050</title>
+       <link rel="stylesheet" href="static/css/style.css">
+   </head>
+   <body>
+    <div class = Camera>
+       <h1>HOME</h1><br>
+       <h1>家のドアを開けるためのサービス</h1>
+       <center><img src="{{ url_for('main.video_feed') }}"></center>
+    </div>
+   </body>
+   {% endblock %}

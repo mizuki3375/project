@@ -1,0 +1,27 @@
+<!-- templates/signup.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex min-h-screen items-center justify-center ">
+    <div class="">
+    <h3 class="tmb-8 text-center text-3xl font-bold text-white">Sign Up</h3>
+    <form method="POST" action="/signup" class="flex w-80 justify-center rounded-md bg-white py-5 shadow-md">
+        <div class="flex w-full flex-col justify-center gap-y-3">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="text-center">
+                    {{ messages[0] }}. <br>Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+                </div>
+            {% endif %}
+            {% endwith %}
+                <input class="mx-6 h-12 rounded-md border border-gray-400 pl-3 text-xl" type="email" name="email" placeholder="Email" autofocus="">
+                <input class="mx-6 h-12 rounded-md border border-gray-400 pl-3 text-xl" type="text" name="name" placeholder="Name" autofocus="">
+                <input class="mx-6 h-12 rounded-md border border-gray-400 pl-3 text-xl" type="password" name="password" placeholder="Password">
+                <button class="mx-6 h-12 rounded-md bg-[#1E9DEC] text-white">Sign Up</button>
+            </form>
+        </div>
+    </form>
+    </div>
+</div>
+{% endblock %}
