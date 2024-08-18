@@ -2,7 +2,7 @@
 
 プロジェクトで作成した顔認証システム
 
-cd flask_auth_app
-source auth/bin/activate
-export FLASK_APP=project
-export FLASK_DEBUG=1
+cd flask_auth_app<br>
+source auth/bin/activate<br>
+export FLASK_APP=project<br>
+export FLASK_DEBUG=1<br>
